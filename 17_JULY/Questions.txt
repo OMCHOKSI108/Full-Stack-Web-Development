@@ -1,0 +1,19 @@
+Signup  
+    Name Email Mobile Password Address etc  
+    Button store all data in LocalStorage
+
+Login  
+    Email Password  
+    Button Click Compare LocalStorage data with Textbox
+
+Dashboard  
+    Hi, Name              Change Password  Logout
+
+Logout  
+    Remove LocalStorage Value
+
+Change Password  
+    Old Password New Password and Confirm Password
+
+Edit Profile  
+Forgot Password  
