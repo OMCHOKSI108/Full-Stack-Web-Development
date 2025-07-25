@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        a {
+            text-align: center;
+            margin-top: 10px;
+            display: block;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form id="registerform">
+        <h2>Register</h2>
+        <input type="text" placeholder="Name" required id="name">
+        <input type="text" placeholder="Username" required id="username">
+        <input type="password" placeholder="Password" required id="password">
+        <input type="password" placeholder="Confirm Password" required id="confirmpassword">
+        <button type="submit">Register</button>
+        <a href="login.html">Go to Login</a>
+    </form>
+
+    <script>
+        document.getElementById("registerform").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmpassword = document.getElementById("confirmpassword").value;
+
+            if (password !== confirmpassword) {
+                alert("Passwords do not match");
+                return;
+            }
+
+            const user = {
+                name: name,
+                username: username,
+                password: password
+            };
+
+            localStorage.setItem(username, JSON.stringify(user));
+            alert("Registration successful! Please login.");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

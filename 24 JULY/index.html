@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="welcomeMessage">Hello</h1>
+    <button id="logoutButton" class="hidden">Logout</button>
+    <a href="changepassword.html" id="changePasswordLink" class="hidden">Change Password</a>
+
+    <script>
+        var user = localStorage.getItem("user");
+        if (user) {
+            var parsedUser = JSON.parse(user);
+            document.getElementById("welcomeMessage").innerHTML = `Hello, ${parsedUser.name}`;
+            document.getElementById("logoutButton").classList.remove("hidden");
+            document.getElementById("changePasswordLink").classList.remove("hidden");
+        } else {
+            document.getElementById("welcomeMessage").innerHTML = 'Hello, please <a href="login.html">login</a>';
+        }
+
+        document.getElementById("logoutButton").addEventListener("click", function() {
+            localStorage.removeItem("user");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
