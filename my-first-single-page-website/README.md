@@ -1,18 +1,78 @@
+# Multi-Page Interactive Website (SPA)
+
 This is a basic **Single Page Application (SPA)** built with React. It displays multiple page-like sections without reloading the browser. The website demonstrates simple interactive features such as counters, event handling, and arithmetic operations, ideal for beginners exploring React fundamentals.
 
 ## 🌐 Live Website
 
-🔗 [View on Netlify](https://polite-khapse-ee520f.netlify.app/)
-# React + Vite
+🔗 [View on Netlify](https://basic-spa-website.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📄 Features
 
-Currently, two official plugins are available:
+- 🏠 **Home / About / Contact** – Static views that simulate multi-page navigation without actual page reload.
+- 🎉 **EventDemo** – Demonstrates basic event handling in React.
+- 🔢 **Counter** – An interactive counter that:
+  - Increases or decreases a value.
+  - Shows a warning if the value exceeds a limit.
+- ➕ **Sum** – Takes two numbers as input and displays their sum.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Built With
 
-## Expanding the ESLint configuration
+- **React**
+- **Vite** (for faster development/build)
+- **HTML + CSS**
+```
+## 📁 Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+basic-website/
+├── public/
+├── src/
+│ ├── components/
+│ ├── App.jsx
+│ └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
+
+bash
+Copy
+Edit
+
+## 🚀 Run Locally
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/siddhraj1412/basic-website.git
+   cd basic-website
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the dev server:
+
+bash
+Copy
+Edit
+npm run dev
+Open your browser and go to:
+http://localhost:5173
+
+🌍 Deployment
+This project is deployed on Netlify. Any changes pushed to the main branch will automatically update the live site.
+
+📦 What to Exclude from GitHub
+Make sure not to upload:
+
+node_modules/ (already ignored in .gitignore)
+
+.env (if you ever use it)
+
+dist/ (Netlify will build this automatically)
+
+🙌 Acknowledgements
+
+Developed as a learning project.

@@ -6,6 +6,7 @@ import Home from './Home.jsx'
 import EventDemo from './EventDemo.jsx'
 import Counter from './Counter.jsx'
 import Sumdemo from './Sumdemo.jsx'
+import hooks from './hooksdemo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
