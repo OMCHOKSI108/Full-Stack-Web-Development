@@ -7,6 +7,7 @@ import EventDemo from './EventDemo.jsx'
 import Counter from './Counter.jsx'
 import Sumdemo from './Sumdemo.jsx'
 import hooks from './hooksdemo.jsx'
+import RegisterForm from './RegisterForm.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -7,6 +7,7 @@ import Counter from './Counter';
 import Sumdemo from './Sumdemo';
 import Hooksdemo from './hooksdemo';
 import Sumdemo1 from './Sumdemo';
+import RegisterForm from './RegisterForm';
 
 function App() {
   return (<>
@@ -21,6 +22,7 @@ function App() {
       <Link to='/sumdemo'>Sum</Link>|
       <Link to='/sumdemo1'>Sum1</Link>|
       <Link to='/hooks'>hooks</Link>|
+      <Link to='/registration'>Register</Link>
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -35,6 +37,8 @@ function App() {
         <Route path='/cake/ahmedabad' element={<h1>Ahmedabad Cake </h1>} />
         <Route path='/cake/surat' element={<h1>Surat Cake</h1>} />
         <Route path='*' element={<h1>404 File Not Found</h1>} />
+        <Route path='/registration' element={<RegisterForm/>} />
+        
       </Routes>
     </Router>
 
