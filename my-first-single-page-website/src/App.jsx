@@ -8,11 +8,13 @@ import Sumdemo from './Sumdemo';
 import Hooksdemo from './hooksdemo';
 import Sumdemo1 from './Sumdemo';
 import RegisterForm from './RegisterForm';
+import RegisterForm_class from './RegisterForm_class';
+import RegisterForm_hooks from './RegisterForm_hooks';
 
 function App() {
   return (<>
     <h1>App</h1>
-    <br/><br/><br/>
+    <br /><br /><br />
     <Router>
       <Link to='/home'>Home</Link>|
       <Link to='/about'>About</Link>|
@@ -23,6 +25,8 @@ function App() {
       <Link to='/sumdemo1'>Sum1</Link>|
       <Link to='/hooks'>hooks</Link>|
       <Link to='/registration'>Register</Link>
+      <Link to='/registration_class'>RegisterForm_class</Link>
+      <Link to='/registration_class'>RegisterForm_hooks</Link>
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -37,8 +41,10 @@ function App() {
         <Route path='/cake/ahmedabad' element={<h1>Ahmedabad Cake </h1>} />
         <Route path='/cake/surat' element={<h1>Surat Cake</h1>} />
         <Route path='*' element={<h1>404 File Not Found</h1>} />
-        <Route path='/registration' element={<RegisterForm/>} />
-        
+        <Route path='/registration' element={<RegisterForm />} />
+        <Route path='/registration_class' element={<RegisterForm_class />} />
+        <Route path='/registration_hooks' element={<RegisterForm_hooks />} />
+
       </Routes>
     </Router>
 
