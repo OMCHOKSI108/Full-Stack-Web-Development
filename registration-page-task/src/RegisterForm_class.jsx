@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './App.css';
 
-class RegisterForm extends Component {
+class RegisterForm_class extends Component {
 
   constructor(props) {
     super(props);
@@ -62,7 +62,7 @@ class RegisterForm extends Component {
       return;
     }
 
-    if (!email.includes('@') || !email.includes('.') || email.indexOf('@') > email.lastIndexOf('.')) {
+    if (!email.includes('@') || !email.includes('.') || email.indexOf('@') > email.lastIndexOf('.') || email.indexOf('@') === 0 || email.indexOf('.') === email.length - 1) {
       this.setState({ error: 'Invalid email format' });
       return;
     }
@@ -240,4 +240,4 @@ class RegisterForm extends Component {
   }
 }
 
-export default RegisterForm;
+export default RegisterForm_class;
