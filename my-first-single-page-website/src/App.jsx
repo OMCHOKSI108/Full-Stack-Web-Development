@@ -6,7 +6,7 @@ import EventDemo from './EventDemo';
 import Counter from './Counter';
 import Sumdemo from './Sumdemo';
 import Hooksdemo from './hooksdemo';
-import Sumdemo1 from './Sumdemo';
+import Sumdemo1 from './Sumdemo1';
 import RegisterForm from './RegisterForm';
 import RegisterForm_class from './RegisterForm_class';
 import RegisterForm_hooks from './RegisterForm_hooks';
@@ -16,17 +16,17 @@ function App() {
     <h1>App</h1>
     <br /><br /><br />
     <Router>
-      <Link to='/home'>Home</Link>|
-      <Link to='/about'>About</Link>|
-      <Link to='/contact'>Contact</Link>|
-      <Link to='/eventdemo'>EventDemo</Link>|
-      <Link to='/counter'>Counter</Link>|
-      <Link to='/sumdemo'>Sum</Link>|
-      <Link to='/sumdemo1'>Sum1</Link>|
-      <Link to='/hooks'>hooks</Link>|
-      <Link to='/registration'>Register</Link>
-      <Link to='/registration_class'>RegisterForm_class</Link>
-      <Link to='/registration_class'>RegisterForm_hooks</Link>
+      <Link to='/home'>Home</Link> |
+      <Link to='/about'>About</Link> |
+      <Link to='/contact'>Contact</Link> |
+      <Link to='/eventdemo'>EventDemo</Link> |
+      <Link to='/counter'>Counter</Link> |
+      <Link to='/sumdemo'>Sum</Link> |
+      <Link to='/sumdemo1'>Sum1</Link> |
+      <Link to='/hooks'>hooks</Link> |
+      <Link to='/registration'>Register</Link> |
+      <Link to='/registration_class'>RegisterForm_class</Link> |
+      <Link to='/registration_hooks'>RegisterForm_hooks</Link> |
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -38,13 +38,12 @@ function App() {
         <Route path='/sumdemo' element={<Sumdemo />} />
         <Route path='/sumdemo1' element={<Sumdemo1 />} />
         <Route path='/hooks' element={<Hooksdemo />} />
-        <Route path='/cake/ahmedabad' element={<h1>Ahmedabad Cake </h1>} />
-        <Route path='/cake/surat' element={<h1>Surat Cake</h1>} />
-        <Route path='*' element={<h1>404 File Not Found</h1>} />
         <Route path='/registration' element={<RegisterForm />} />
         <Route path='/registration_class' element={<RegisterForm_class />} />
         <Route path='/registration_hooks' element={<RegisterForm_hooks />} />
-
+        <Route path='/cake/ahmedabad' element={<h1>Ahmedabad Cake </h1>} />
+        <Route path='/cake/surat' element={<h1>Surat Cake</h1>} />
+        <Route path='*' element={<h1>404 File Not Found</h1>} />
       </Routes>
     </Router>
 

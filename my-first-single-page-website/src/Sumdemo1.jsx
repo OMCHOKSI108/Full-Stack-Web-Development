@@ -1,5 +1,5 @@
 import React from 'react'
-function Sumdemo() {
+function Sumdemo1() {
     const [no1, setNo1] = React.useState(0);
     const [no2, setNo2] = React.useState(0);
     const [choice, setChoice] = React.useState("");
@@ -43,4 +43,4 @@ function Sumdemo() {
     );
 }
 
-export default Sumdemo;
+export default Sumdemo1;
