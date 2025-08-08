@@ -10,7 +10,12 @@ import Sumdemo1 from './Sumdemo1';
 import RegisterForm from './RegisterForm';
 import RegisterForm_class from './RegisterForm_class';
 import RegisterForm_hooks from './RegisterForm_hooks';
-import Task from './Task';
+import Login from './Login';
+import Signup from './Signup';
+import Dashboard from './Dashboard';
+import Changepassword from './Changepassword';
+import Editprofile from './Editprofile';
+
 
 
 function App() {
@@ -29,7 +34,11 @@ function App() {
       <Link to='/registration'>Register</Link> |
       <Link to='/registration_class'>RegisterForm_class</Link> |
       <Link to='/registration_hooks'>RegisterForm_hooks</Link> |
-      <Link to='/task'>Task</Link> |
+      <Link to='/login'>Login</Link> |
+      <Link to='/signup'>Signup</Link> |
+      <Link to='/dashboard'>Dashboard</Link> |
+      <Link to='/changepassword'>Changepassword</Link> |
+      <Link to='/editprofile'>Editprofile</Link> |
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -46,7 +55,11 @@ function App() {
         <Route path='/registration_hooks' element={<RegisterForm_hooks />} />
         <Route path='/cake/ahmedabad' element={<h1>Ahmedabad Cake </h1>} />
         <Route path='/cake/surat' element={<h1>Surat Cake</h1>} />
-        <Route path='/task' element={<Task />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/changepassword' element={<Changepassword />} />
+        <Route path='/editprofile' element={<Editprofile />} />
         <Route path='*' element={<h1>404 File Not Found</h1>} />
       </Routes>
     </Router>
